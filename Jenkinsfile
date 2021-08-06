@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'node:lts-buster-slim' 
             args '-p 3000:3000' 
-            args  '--net="jenkins_network"'
+            args  '--net="jenkins"'
         }
     }
     stages {
